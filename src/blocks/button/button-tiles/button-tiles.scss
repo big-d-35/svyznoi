@@ -1,0 +1,29 @@
+.button {
+    border: 0px;
+    text-transform: uppercase;
+    color: $action-color1;
+    background: $action-color2;
+    font-family: $ff;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    font-size: $button;
+    width: 50px;
+    height: 34px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover  {
+        background: $action-color1;
+        color: $action-color2;
+ 
+    }
+    &__text {
+        display: none;
+    }
+    &__tick {
+        display: none;
+    }
+}

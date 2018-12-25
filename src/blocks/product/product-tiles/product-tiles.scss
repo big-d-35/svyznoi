@@ -1,0 +1,110 @@
+.product {
+    
+    cursor: pointer;
+    width: 234px;
+    min-height:530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid $bg-color;
+    border-right: 1px solid $bg-color;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    &:hover {
+        
+       
+    }
+    
+    &__pictures {
+        width: 23%;
+        max-width: 210px;
+        
+        margin-top: 20px;
+        margin-bottom: 16px;
+        height: 224px;
+        width: 180px;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        height: 224px;
+    }
+    &__card {
+        width: 100%;
+        max-width: 234px;
+        
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+        
+        font-family: $ff;
+        font-size: $product-card-tiles;
+        color: $text-color2;
+        
+    }
+    &__category {
+        margin-bottom: 4px;
+        line-height: 1.29;
+    }
+    &__name {
+        width: 190px;
+        font-size: $product-name-tiles;
+        color: $text-color1;
+        margin-bottom: 14px;
+        line-height: 1.38;
+        cursor: pointer;
+        &:hover {
+            
+            color: $action-color1;
+        }
+    }
+    &__rating {
+        margin-bottom: 30px;
+        &-fa {
+            height: 11px;
+        }
+    }
+    &__text {
+        display: none;
+    }
+    &__price {
+        
+        max-width: 190px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        &-before{
+            width: 100%;
+            font-family: $ff;
+            color: $text-color2;
+            line-height: 25px;
+            font-size: $price-before;
+            text-decoration: line-through;
+            margin-bottom: 8px;
+        }
+        &-now {
+            width: 81px;
+            color: $text-color1;
+            font-family: $ff;
+            font-size: $price-tiles;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            margin-bottom: 0px;
+            margin-right: 17px;
+        }
+        &-fa {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        
+    }
+}

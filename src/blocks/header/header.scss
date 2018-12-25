@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background: $bg-color2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__container {
+        width:100%;
+        max-width: 940px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        cursor: pointer;
+    }
+    &__phone {
+        cursor: pointer;
+        color: $text-color1;
+        font-family: $ff;
+        font-size: $phone-header;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: normal;
+        text-decoration: none;
+    }
+    
+}

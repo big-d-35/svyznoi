@@ -1,0 +1,37 @@
+.represent {
+    width:100%;
+    max-width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background: $bg-color2;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    &__title {
+        font-family: $ff;
+        font-size: $represent-title;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        margin-right: 21px;
+    }
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+        padding: 4px;
+        border: 1px solid $bg-color;
+        border-radius: 8px;
+        margin-right: 32px;
+    }
+}
+
+.icons {
+    width: 32px;
+    height: 32px;
+}
