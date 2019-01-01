@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel="stylesheet" media="only screen and (min-width: 640px), only screen and (min-device-width: 640px)" href="/src/blocks/desktop.css" >
     <link rel="stylesheet" media="only screen and (max-width: 639px), only screen and (max-device-width: 639px)" href="/src/blocks/mobile.css"> 
-    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+   
+     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="app">
@@ -27,126 +29,134 @@
                     <p class="represent__title">Вид:</p>
                     <div class="represent__icons">
                           
-                        <div class="icons icons-active">
+                        <div class="icons " id="icon-listing">
                             <img src="/dist/img/listing-white.svg" alt="" width="16px" height="16px">
                         </div>
-                        <div class="icons">
+                        <div class="icons icons-active" id="icon-tiles">
                             <img src="/dist/img/tiles-violet.svg" alt="" width="16px" height="16px">
                         </div>
                            
                     </div> 
                 </div>
-              <div class="products-tiles"> 
-                    <div class="product">
-                        <div class="product__pictures">
+              <div class="products-tiles" id="products-page"> 
+                    <div class="product-tiles" >
+                        <div class="product-tiles__pictures">
                             <img src="/dist/img/product/iphone-xs-max-512gb-gold.png" srcset="/dist/img/product/iphone-xs-max-512gb-gold@2x.png 2x, /dist/img/product/iphone-xs-max-512gb-gold@3x.png 3x" alt="" class="product__img">
                         </div>
-                        <div class="product__card">
-                            <h6 class="product__category">Смартфон</h6>
-                            <h2 class="product__name">Apple iPhone XS Max 512GB (золотистый)</h2>
-                            <div class="product__rating">
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
+                        <div class="product__info">
+                            <div class="product__card">
+                                <h6 class="product__category">Смартфон</h6>
+                                <h2 class="product__name">Apple iPhone XS Max 512GB (золотистый)</h2>
+                                <div class="product__rating">
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                </div>
+
+                                <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
+                                <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
+                                <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
+                                <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
+
                             </div>
-                            
-                            <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
-                            <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
-                            <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
-                            <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
-                            
-                        </div>
-                        <div class="product__price">
-                            <span class="product__price-before">70 490</span>
-                            <span class="product__price-now">69 990 <i class="product__price-fa fas fa-ruble-sign "></i></span>
-                            <button class="button">
-                                <img src="dist/img/tick-white.svg" alt="" class="button__tick">
-                                <img src="dist/img/cart-purple.svg" alt="" class="button__cart">
-                                
-                                <span class="button__text">купить</span></button>
+                            <div class="product__price">
+                                <span class="product__price-before">70 490</span>
+                                <span class="product__price-now">69 990 <i class="product__price-fa fas fa-ruble-sign "></i></span>
+                                <button class="button">
+                                    <img src="dist/img/tick-white.svg" alt="" class="button__tick">
+                                    <img src="dist/img/cart-purple.svg" alt="" class="button__cart">
+
+                                    <span class="button__text">купить</span></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product">
-                        <div class="product__pictures">
+                    <div class="product-tiles">
+                        <div class="product-tiles__pictures">
                             <img src="/dist/img/product/iphone-8-red-special-edition-64gb-red.jpg" srcset="/dist/img/product/iphone-8-red-special-edition-64gb-red@2x.jpg 2x, /dist/img/product/iphone-8-red-special-edition-64gb-red@3x.jpg 3x" alt="" class="product__img">
                         </div>
-                        <div class="product__card">
-                            <h6 class="product__category">Смартфон</h6>
-                            <h2 class="product__name">Apple iPhone 8 (PRODUCT)RED™ Special Edition 64GB (красный)</h2>
-                            <div class="product__rating">
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
+                        <div class="product__info">
+                            <div class="product__card">
+                                <h6 class="product__category">Смартфон</h6>
+                                <h2 class="product__name">Apple iPhone 8 (PRODUCT)RED™ Special Edition 64GB (красный)</h2>
+                                <div class="product__rating">
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                </div>
+
+                                    <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
+                                    <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
+                                    <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
+                                    <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
+
                             </div>
-                            
-                                <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
-                                <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
-                                <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
-                                <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
-                            
-                        </div>
-                        <div class="product__price">
-                            <span class="product__price-before"></span>
-                            <span class="product__price-now">45 990 <i class="product__price-fa fas fa-ruble-sign"></i></span>
-                            <button class="button"><img src="dist/img/tick-white.svg" alt="" class="button__tick"><img src="dist/img/cart-purple.svg" alt="" class="button__cart"><span class="button__text">купить</span></button>
+                            <div class="product__price">
+                                <span class="product__price-before"></span>
+                                <span class="product__price-now">45 990 <i class="product__price-fa fas fa-ruble-sign"></i></span>
+                                <button class="button"><img src="dist/img/tick-white.svg" alt="" class="button__tick"><img src="dist/img/cart-purple.svg" alt="" class="button__cart"><span class="button__text">купить</span></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product">
-                        <div class="product__pictures">
+                    <div class="product-tiles">
+                        <div class="product-tiles__pictures">
                             <img src="/dist/img/product/iphone-se-32gb-grey.jpg" srcset="/dist/img/product/iphone-se-32gb-grey@2x.jpg 2x, /dist/img/product/iphone-se-32gb-grey@3x.jpg 3x" alt="" class="product__img">
                         </div>
-                        <div class="product__card">
-                            <h6 class="product__category">Смартфон</h6>
-                            <h2 class="product__name">Apple iPhone SE 32GB (серый космос)</h2>
-                            <div class="product__rating">
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
+                        <div class="product__info">
+                            <div class="product__card">
+                                <h6 class="product__category">Смартфон</h6>
+                                <h2 class="product__name">Apple iPhone SE 32GB (серый космос)</h2>
+                                <div class="product__rating">
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                </div>
+
+                                    <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
+                                    <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
+                                    <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
+                                    <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
+
                             </div>
-                            
-                                <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
-                                <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
-                                <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
-                                <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
-                            
-                        </div>
-                        <div class="product__price">
-                            <span class="product__price-before">18 790</span>
-                            <span class="product__price-now">18 490 <i class="product__price-fa fas fa-ruble-sign"></i></span>
-                            <button class="button"><img src="dist/img/tick-white.svg" alt="" class="button__tick"><img src="dist/img/cart-purple.svg" alt="" class="button__cart"><span class="button__text">купить</span></button>
+                            <div class="product__price">
+                                <span class="product__price-before">18 790</span>
+                                <span class="product__price-now">18 490 <i class="product__price-fa fas fa-ruble-sign"></i></span>
+                                <button class="button"><img src="dist/img/tick-white.svg" alt="" class="button__tick"><img src="dist/img/cart-purple.svg" alt="" class="button__cart"><span class="button__text">купить</span></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product">
-                        <div class="product__pictures">
+                    <div class="product-tiles">
+                        <div class="product-tiles__pictures">
                             <img src="/dist/img/product/iphone-xr-64gb-blue.jpg" srcset="/dist/img/product/iphone-xr-64gb-blue@2x.jpg 2x, /dist/img/product/iphone-xr-64gb-blue@3x.jpg 3x" alt="" class="product__img">
                         </div>
-                        <div class="product__card">
-                            <h6 class="product__category">Смартфон</h6>
-                            <h2 class="product__name">Apple iPhone XR 64GB (синий)</h2>
-                            <div class="product__rating">
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
-                                <i class="fa fa-star product__rating-fa"></i>
+                        <div class="product__info">
+                            <div class="product__card">
+                                <h6 class="product__category">Смартфон</h6>
+                                <h2 class="product__name">Apple iPhone XR 64GB (синий)</h2>
+                                <div class="product__rating">
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                    <i class="fa fa-star product__rating-fa"></i>
+                                </div>
+
+                                    <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
+                                    <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
+                                    <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
+                                    <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
+
                             </div>
-                            
-                                <li class="product__text">Диагональ (дюйм):<span class="product__text-info">6.5</span></li>
-                                <li class="product__text">Разрешение (пикс):<span class="product__text-info">2688x1242</span></li>
-                                <li class="product__text">Встроенная память (Гб)<span class="product__text-info">512</span></li>
-                                <li class="product__text">Фотокамера (Мп):<span class="product__text-info">12 + 12 (двойная)</span></li>
-                            
-                        </div>
-                        <div class="product__price">
-                            <span class="product__price-before">170 490</span>
-                            <span class="product__price-now">64 990 <i class="product__price-fa fas fa-ruble-sign"></i></span>
-                            <button class="button"><img src="dist/img/tick-white.svg" alt="" class="button__tick"><img src="dist/img/cart-purple.svg" alt="" class="button__cart"><span class="button__text">купить</span></button>
+                            <div class="product__price">
+                                <span class="product__price-before">170 490</span>
+                                <span class="product__price-now">64 990 <i class="product__price-fa fas fa-ruble-sign"></i></span>
+                                <button class="button"><img src="dist/img/tick-white.svg" alt="" class="button__tick"><img src="dist/img/cart-purple.svg" alt="" class="button__cart"><span class="button__text">купить</span></button>
+                            </div>
                         </div>
                     </div>
                     
@@ -160,5 +170,6 @@
             </div>
         </footer>
     </div>
+     <script src="main.js" ></script>
 </body>
 </html>

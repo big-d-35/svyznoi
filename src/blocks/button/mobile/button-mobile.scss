@@ -1,4 +1,4 @@
-.button-listing {
+.button {
     border: 0px;
     text-transform: uppercase;
     color: $action-color1;
@@ -10,24 +10,25 @@
     line-height: 2.5;
     letter-spacing: normal;
     font-size: $button;
-    width: 140px;
+    width: 60px;
+    height: 40px;
     border-radius: 8px;
     cursor: pointer;
-    &:hover {
+    overflow: hidden;
+   
+    &:hover  {
         background: $action-color1;
         color: $action-color2;
-    }
-    
-    &__tick {
-        display: none;
-        width: 15px;
-        height: 14px;
-        margin-right: 12px;
+ 
     }
     &__cart {
+         display: block;
+        margin: auto;
+    }
+    &__text {
         display: none;
-        width: 21px;
-        height: 19px;
-       
+    }
+    &__tick {
+        display: none;
     }
 }

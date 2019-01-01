@@ -1,0 +1,105 @@
+.product {
+    width: 100%;
+    max-width: 639px;
+    min-width: 320px;
+    height: 266px;
+    min-height: 266px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    border-bottom: 1px solid $bg-color;
+    
+    background: $bg-color2;
+    &__pictures {
+        width: 120px;
+        height: 172px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+    &__img {
+        height: 172px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__info {
+        
+        width: 150px;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    &__card {
+        width: 100%;
+        min-height: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-family: $ff;
+        border-right: 0px solid $bg-color;
+    }
+    &__category {
+        font-size: $product-category-mobile;
+        color: $text-color2;
+        margin-bottom: 4px;
+        line-height: 18px;
+    }
+    &__name {
+        font-size: $product-name-mobile;
+        color: $text-color1;
+        margin-bottom: 12px;
+        line-height: 20px;
+    }
+    &__rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        &-fa {
+            height: 11px;
+            width: 12px;
+            color: $bg-color ;
+        }
+    }
+    &__text {
+        display: none;
+    }
+    &__price {
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: $ff;
+        &-before {
+            
+            width: 89px;
+            font-size: $price-before;
+            color: $text-color2;
+            text-decoration: line-through;
+            margin-bottom: 8px;
+        }
+        &-now {
+            width: 81px;
+            font-size: $price-mobile;
+            font-weight: bold;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.3;
+              letter-spacing: normal;
+              color: $text-color1;
+            margin-right: 9px;
+        }
+        &-fa {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
